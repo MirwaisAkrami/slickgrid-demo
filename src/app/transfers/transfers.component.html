@@ -1,0 +1,10 @@
+<div class="container" id="transfers-container">
+    <angular-slickgrid gridId="grid"
+                       [columnDefinitions]="columns"
+                       [gridOptions]="gridOptions"
+                       [paginationOptions]="paginationOptions"
+                       (onGridStateChanged)="gridStateChanged($event.detail)"
+                       [dataset]="dataset"
+                       (onAngularGridCreated)="angularGridReady($event.detail)">
+    </angular-slickgrid>
+  </div>
